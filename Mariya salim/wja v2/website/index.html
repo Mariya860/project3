@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Journal</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">Weather Journal</div>
+        <form id="weatherForm">
+            <input type="number" id="zipcode" placeholder="Enter Zip Code" />
+            <textarea id="feeling" placeholder="How do you feel today?"></textarea>
+            <div id="error"></div>
+            <button id="generate">Generate</button>
+        </form>
+        <h3>Most Recent Entries</h3>
+        <div class="card">
+            <div class="left">
+                <img src="" id="icon" />
+                <div id="temp"></div>
+                <div id="city"></div>
+                <div id="rain"></div>
+            </div>
+            <div class="right">
+                <div id="date"></div> 
+                <div id="feelingText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

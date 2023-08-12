@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./bg.jpg') no-repeat 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+#app {
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.header {
+    display: block;
+    width: 45%;
+    padding: 15px;
+    margin: 5px auto;
+    background: #a101aa;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    font-size: 2em;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin: 3px;
+    outline: none;
+    text-align: center;
+}
+
+input {
+    border-radius: 15px 15px 0 0;
+}
+
+textarea {
+    border-radius: 0 0 15px 15px;
+}
+
+button {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    background: #a101aa;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 15px auto;
+    font-size: 1.2em;
+}
+
+.card {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    background: hsla(0, 0%, 100%, 0.829);
+    margin: 0 auto;
+    padding: 15px;
+    margin: 5px;
+}
+
+#temp {
+    font-size: 3em;
+    color: #a101aa;
+}
+
+#icon {
+    border-radius: 50%;
+    padding: 15px;
+    background: #a101aa;
+}
+
+#city {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+#feelingText {
+    color: #a101aa;
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+#error {
+    /* display: none; */
+    display: block;
+    color: red;
+    padding: 5px;
+    margin: 5px;
+}
+
+.left, .right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 65%;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #app {
+        width: 75%;
+    }
+}
